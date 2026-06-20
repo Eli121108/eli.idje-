@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibración Rock</title>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+             <button class="menu-toggle" onclick="toggleMenu()">
+        ☰
+    </button>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="indexvideo.html">Más sobre el rock</a></li>
+            <li><a href="grupos.html">Grupos</a></li>
+        </ul>
+        <div class="home-icon">
+            <a href="index.html">
+                <img src="casa.png" alt="Home Icon" class="home-image">
+            </a> 
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="logo-container">
+            <img src="vibraciònRock.png" alt="Logo Rock" class="main-logo">
+        </div>
+        <h1 class="main-title">VIBRACIÓN <span>ROCK</span></h1>
+    </header>
+
+    <main class="content">
+        <h2>Servicios y Costos de Bandas</h2>
+        <p>Conoce los precios estimados y lo que incluye el show de cada una de nuestras bandas asociadas:</p>
+        
+        <!-- Bloque de Bandas Simple -->
+        <div class="lista-bandas">
+            
+            <div class="banda-item">
+                <h3>1. Los Rockn' Broder's — $8,500 MXN</h3>
+                <p><strong>Servicio:</strong> 2 tandas de 45 minutos de puro rock clásico. Incluye equipo de audio profesional para eventos medianos.</p>
+            </div>
+
+            <div class="banda-item">
+                <h3>2. The Shots Rock Live — $12,000 MXN</h3>
+                <p><strong>Servicio:</strong> Show corrido de 1 hora y media de rock pop actual. Incluye sistema de audio de alta fidelidad y juego de luces LED.</p>
+            </div>
+
+            <div class="banda-item">
+                <h3>3. Piratas del Rock — $16,500 MXN</h3>
+                <p><strong>Servicio:</strong> 3 sets de 40 minutos de hard rock pesado. Incluye audio de gran potencia, luces robóticas y máquina de humo.</p>
+            </div>
+
+            <div class="banda-item">
+                <h3>4. Irockpuato — $7,000 MXN</h3>
+                <p><strong>Servicio:</strong> 2 turnos de 50 minutos con el mejor rock urbano y ska. Incluye sonido básico y sección de canciones a petición.</p>
+            </div>
+
+        </div>
+
+        <p class="nota-final"><strong>Nota:</strong> Todos los servicios incluyen contrato formal y montaje previo al evento. Los costos pueden variar según la fecha y la ubicación.</p>
+    </main>
+       <script>
+function toggleMenu() {
+    document.getElementById("menu").classList.toggle("show");
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,305 @@
+body{
+    background-color: #2B2B2B;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* ========================= */
+/* NAVBAR */
+/* ========================= */
+
+.navbar{
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li{
+    margin-right: 20px;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.nav-links a:hover{
+    color: #c0c0c0;
+}
+
+.home-icon img{
+    width: 30px;
+    height: auto;
+}
+
+/* Botón hamburguesa */
+.menu-toggle{
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* ========================= */
+/* HERO */
+/* ========================= */
+
+.hero{
+    padding: 40px 20px;
+}
+
+.main-logo{
+    width: 100px;
+    filter: grayscale(100%) brightness(1.2);
+}
+
+.main-title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(2rem, 6vw, 4rem);
+    font-weight: 800;
+    margin-top: 10px;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px rgba(255,255,255,0.2);
+}
+
+/* ========================= */
+/* CONTENIDO */
+/* ========================= */
+
+.content{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.intro{
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+.highlights{
+    margin: 30px 0;
+}
+
+.highlights p{
+    margin-bottom: 15px;
+}
+
+.highlights strong{
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.footer-note{
+    margin-top: 40px;
+    font-style: italic;
+}
+
+/* ========================= */
+/* IMÁGENES */
+/* ========================= */
+
+.imagenes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.main-image{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border: 8px solid #555;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.main-image:hover{
+    transform: scale(1.03);
+}
+
+/* ========================= */
+/* VIDEO */
+/* ========================= */
+
+.video-centrado{
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.video-centrado iframe{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+/* ========================= */
+/* CONTACTOS */
+/* ========================= */
+
+.contenedor-contactos{
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #1a1a1a;
+    border-radius: 15px;
+}
+
+.titulo-contactos{
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.boton-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin: 12px 0;
+    background: #2a2a2a;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.boton-social:hover{
+    background: #030436;
+}
+
+/* ========================= */
+/* TARJETA CONTACTO */
+/* ========================= */
+
+.seccion-contacto{
+    background-color: #1a1a1a;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.tarjeta-contacto{
+    background-color: #000;
+    border-radius: 12px;
+    padding: 30px;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+.redes-sociales{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 20px 0;
+}
+
+.icono-red{
+    font-size: 2rem;
+    color: white;
+    transition: transform .3s, color .3s;
+}
+
+.icono-red.ig:hover{
+    color: #E1306C;
+    transform: scale(1.2);
+}
+
+.icono-red.fb:hover{
+    color: #1877F2;
+    transform: scale(1.2);
+}
+
+.icono-red.yt:hover{
+    color: #FF0000;
+    transform: scale(1.2);
+}
+
+.icono-red.wa:hover{
+    color: #25D366;
+    transform: scale(1.2);
+}
+
+/* ========================= */
+/* CELULAR */
+/* ========================= */
+
+@media (max-width: 768px){
+
+    .navbar{
+        position: relative;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-toggle{
+        display: block;
+    }
+
+    .nav-links{
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #000;
+        flex-direction: column;
+        text-align: center;
+        z-index: 999;
+    }
+
+    .nav-links.show{
+        display: flex;
+    }
+
+    .nav-links li{
+        margin: 0;
+        padding: 15px;
+        border-top: 1px solid #222;
+    }
+
+    .home-icon{
+        display: none;
+    }
+
+    .main-title{
+        font-size: 2rem;
+    }
+
+    .content{
+        padding: 15px;
+    }
+
+    .main-image{
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
+}
